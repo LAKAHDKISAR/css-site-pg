@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <input type="text" class="personName">
+    <button class="btnShowVowels">Show No of Vowels</button>
+    <script>
+        let x = 5;
+        x += 5
+        let y = {
+            "name": "hari"
+        }
+        let z = ["hari", "diwaz"]
+        let m;
+        document.getElementById('root').innerHTML = typeof (m);
+
+
+
+        function getVowels(str) {
+            const m = str.match(/[aeiou]/gi);
+            if (m === null) {
+                return 0;
+            }
+            return m.length;
+        }
+
+        let myBtn = document.querySelector('.btnShowVowels');
+        myBtn.addEventListener('click', () => {
+            let inputValue = document.querySelector('.personName').value;
+            let showVowels = getVowels(inputValue);
+            console.log(showVowels)
+        })
+    </script>
+</body>
+
+</html>

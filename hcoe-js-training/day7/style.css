@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: linear-gradient(to right, rgba(0, 200, 0, 0.2), rgba(0, 22, 45, 0.3));
+}
+
+.todocontainer {
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.inputBox form input {
+    padding: 10px 15px;
+    border: 1px solid gray;
+    outline: none;
+    flex: 1;
+
+}
+
+.inputBox form button {
+    padding: 10px 15px;
+    background-color: gray;
+    color: #fff;
+    border: none;
+    outline: none;
+    /* flex: 1; */
+
+}
+
+.inputBox {
+    margin: 30px 0;
+}
+
+.inputBox form {
+    display: flex;
+    column-gap: 15px;
+}
+
+.todoItems {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    overflow-y: auto;
+}
+
+/* width */
+.todoItems::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.todoItems::-webkit-scrollbar-track {
+    background: #666;
+}
+
+/* Handle */
+.todoItems::-webkit-scrollbar-thumb {
+    background: red;
+}
+
+/* Handle on hover */
+.todoItems::-webkit-scrollbar-thumb:hover {
+    background: green;
+}
+
+.todoItems li {
+    display: flex;
+    justify-content: space-between;
+    border-left: 2px solid green;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.todoItems li:hover {
+    padding-left: 20px;
+}
+
+.todoItems li button {
+    background-color: green;
+    color: #fff;
+    font-size: 12px;
+    padding: 7px;
+    border: none;
+}
+
+.todoItems li .action button:last-child {
+    background-color: red;
+}
+
+.todoItems li .action {
+    display: flex;
+    gap: 10px;
+}
+
+.removed {
+    animation: fadeOutDown 0.5s ease;
+
+}
+
+@keyframes fadeOutDown {
+    from {
+        transform: rotate(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: rotate(10deg);
+        opacity: 0;
+    }
+}
+
+.error {
+    display: none;
+}
+
+.error {}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+
+}

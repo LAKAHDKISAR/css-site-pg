@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="container disabled">
+        <h3 class="title">Image Editor</h3>
+        <div class="wrapper">
+            <div class="editor">
+                <label for="">Filter</label>
+                <div class="filter">
+                    <button id="brightness" class="active">Brightness</button>
+                    <button id="saturation">Saturation</button>
+                    <button id="inversion">Inversion</button>
+                    <button id="grayscale">Grayscale</button>
+                </div>
+
+                <label for="" class="labelwithValue">
+                    <div class="left">Slider</div>
+                    <div class="right">100%</div>
+                </label>
+                <div class="sliderWrapper">
+                    <input type="range" min="0" max="200">
+                </div>
+                <label for="">Rotate and Flip</label>
+
+                <div class="rotateFlip">
+                    <button><i style="transform: scaleX(-1);" class="las la-redo-alt"></i></button>
+                    <button><i class="las la-redo-alt"></i></button>
+                    <button>
+                        <i class="las la-arrows-alt-h"></i>
+                    </button>
+                    <button> <i class="las la-arrows-alt-v"></i></button>
+                </div>
+
+
+            </div>
+            <div class="preview">
+                <img id="previewImage" src="images/image-placeholder.svg" alt="">
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="left">
+                <button class="">Reset Filter</button>
+            </div>
+            <div class="right">
+                <input type="file" id="fileInputHidden" accept="image/*" hidden>
+                <button id="chooseImage">Choose Image</button>
+                <button class="download">Download</button>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

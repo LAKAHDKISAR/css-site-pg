@@ -1,0 +1,12 @@
+$myPrimaryColor: orange;
+
+
+.box {
+    background-color: $myPrimaryColor !important;
+    height: 100px;
+    width: 100px;
+}
+
+.title {
+    color: $myPrimaryColor;
+}

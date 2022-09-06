@@ -1,0 +1,13 @@
+:root {
+    --primaryColor: orange;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: var(--primaryColor)
+}
+
+.title {
+    color: var(--primaryColor);
+}

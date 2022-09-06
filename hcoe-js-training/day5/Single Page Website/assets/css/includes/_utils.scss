@@ -1,0 +1,43 @@
+.flex {
+    display: flex;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.jcs {
+    justify-content: flex-start;
+}
+
+.jcb {
+    justify-content: space-between;
+}
+
+.jce {
+    justify-content: flex-end;
+}
+
+.aic {
+    align-items: center;
+}
+
+.ais {
+    align-items: flex-start;
+}
+
+.aie {
+    align-items: flex-end;
+}
+
+.gap_small {
+    gap: 8px;
+}
+
+.gap {
+    gap: 16px;
+}
+
+.gap_large {
+    gap: 24px;
+}

@@ -1,0 +1,20 @@
+@keyframes rotateIcon {
+    form {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(5px)
+    }
+}
+
+@keyframes moveFlower {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(10px);
+
+    }
+}

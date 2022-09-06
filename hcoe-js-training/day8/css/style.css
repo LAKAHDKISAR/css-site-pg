@@ -1,0 +1,31 @@
+header .bg-dark {
+    background-color: transparent !important;
+}
+
+header {
+    background-color: #190783;
+}
+
+header .nav-link {
+    color: #fff;
+}
+
+header .active {
+    color: #fff !important;
+}
+
+header .navbar-brand {
+    color: #fff;
+}
+
+.hidePass {
+    display: none;
+}
+
+.visible .shoPass {
+    display: none;
+}
+
+.visible .hidePass {
+    display: block;
+}
